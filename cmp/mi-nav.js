@@ -44,8 +44,8 @@ class MiNav extends HTMLElement {
             if (roles.has("Empleado")) {
                 html += /* html */
                     `<li>
-            <a href="editar.html">Editar</a>
-          </li>`;
+                <a href="editar.html">Editar</a>
+              </li>`;
             }
 
             /* Enlace para administrador */
