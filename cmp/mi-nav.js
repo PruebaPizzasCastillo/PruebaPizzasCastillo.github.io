@@ -16,7 +16,7 @@ class MiNav extends HTMLElement {
                   <li><a href="index.html">Inicio</a></li>
                   <li><a href="sesion.html">Sesión</a></li>
                   <li><a href="menu.html">Menú</a></li>
-                  <li><a href="#">Sucursales</a></li>
+                  <li><a href="sucursales.html">Sucursales</a></li>
                 </ul>
             </nav>
           </div>
