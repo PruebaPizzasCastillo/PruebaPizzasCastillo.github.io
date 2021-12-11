@@ -21,7 +21,7 @@
 
 // @ts-nocheck
 /**
- * @typedef {Object} Mensaje
+ * @typedef {Object} Comentario
  * @property {string} usuarioId
  * @property {string} texto
  * @property {firebase.firestore.Timestamp} timestamp
