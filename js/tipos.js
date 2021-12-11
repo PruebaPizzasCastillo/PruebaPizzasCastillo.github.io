@@ -9,6 +9,16 @@
  */
 
 /**
+ * @typedef {Object} Alimento
+ * @property {string} idProducto
+ */
+
+/**
+ * @typedef {Object} Sucursal
+ * @property {string} nombreSucursal
+ */
+
+/**
  * @typedef {Object} Usuario
  * @property {string[]} rolIds
  * @property {string} alumnoId

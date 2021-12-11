@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="js/init.js"></script>
+    <script type="module" src="cmp/mi-nav.js"></script>
+    <script type="module" src="cmp/mi-footer.js"></script>
+    <script type="module" src="cmp/mi-progreso.js"> </script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <mi-nav></mi-nav>
+    <h1>Editar</h1>
+    <div>
+        <a href="alimentoNuevo.html" style="text-align: center;">Agregar alimento</a>
+    </div>
+    <div>
+        <a href="sucursalNuevo.html" style="text-align: center;">Agregar sucursal</a>
+    </div>
+    <ul id="lista" class="lista">
+        <li style="text-align: center;">
+            <mi-progreso></mi-progreso>
+        </li>
+    </ul>
+    <mi-footer></mi-footer>
+    <script type="module" src="js/CtrlEditar.js"></script>
+</body>
+
+</html>
