@@ -13,7 +13,8 @@ collection("Usuario");
 export async function
 iniciaSesión() {
     /** Tipo de autenticación de
-     * usuarios.
+     * usuarios. En este caso es con
+     * Google.
      * @type {import(
         "../lib/tiposFire.js").
         GoogleAuthProvider} */

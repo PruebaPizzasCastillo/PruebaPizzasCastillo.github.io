@@ -4,12 +4,7 @@
  */
 
 /**
- * @typedef {Object} Menu
- * @property {string} nombre
- */
-
-/**
- * @typedef {Object} Sucursal
+ * @typedef {Object} Alumno
  * @property {string} nombre
  */
 
