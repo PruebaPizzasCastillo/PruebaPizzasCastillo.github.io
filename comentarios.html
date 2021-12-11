@@ -28,22 +28,23 @@
 <body>
     <mi-nav></mi-nav>
     <form name="forma">
-        <h1>Comentarios</h1>
-        <p>
-            <div class="quienes-somos">Bienvenido a la sección de comentarios, aquí puedes darnos retroalimentación sobre las pizzas o las sedes de Pizzas Castillo, trabajaremos duro para mejorar tu experiencia, recuerda ser respetuoso &#128516;</div>
-        </p>
-        <div class="centrar">
-            <input name="texto" required placeholder="Escribe algo...">
-            <button>Comentar</button>
-            <ul id="lista">
-                <li>
-                    <mi-progreso></mi-progreso>
-                </li>
-            </ul>
-        </div>
+        <header>
+            <h1>Chat</h1>
+            <div class="herramientas">
+                <input name="texto" required placeholder="Mensaje">
+                <button>Enviar</button>
+            </div>
+        </header>
+        <ul id="lista" class="lista">
+            <li>
+                <mi-progreso>
+                </mi-progreso>
+            </li>
+        </ul>
+        <mi-footer></mi-footer>
     </form>
-    <script type="module" src="js/CtrlComentarios"></script>
-    <mi-footer></mi-footer>
+    <script type="module" src="js/CtrlChat.js">
+    </script>
 </body>
 
 </html>
