@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Comentarios</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js">
+    </script>
+    <script src="js/init.js">
+    </script>
+    <script type="module" src="cmp/mi-nav.js">
+    </script>
+    <script type="module" src="cmp/mi-footer.js">
+    </script>
+    <script type="module" src="cmp/mi-progreso.js">
+    </script>
+</head>
+
+<body>
+    <mi-nav></mi-nav>
+    <form name="forma">
+        <h1>Comentarios</h1>
+        <p>
+            <div class="quienes-somos">Bienvenido a la sección de comentarios, aquí puedes darnos retroalimentación sobre las pizzas o las sedes de Pizzas Castillo, trabajaremos duro para mejorar tu experiencia, recuerda ser respetuoso &#128516;</div>
+        </p>
+        <div class="centrar">
+            <input name="texto" required placeholder="Escribe algo...">
+            <button>Comentar</button>
+            <ul id="lista">
+                <li>
+                    <mi-progreso></mi-progreso>
+                </li>
+            </ul>
+        </div>
+    </form>
+    <script type="module" src="js/CtrlComentarios"></script>
+    <mi-footer></mi-footer>
+</body>
+
+</html>

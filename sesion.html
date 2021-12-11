@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Sesión</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js">
+    </script>
+    <script src="js/init.js">
+    </script>
+    <script type="module" src="cmp/mi-nav.js">
+    </script>
+    <script type="module" src="cmp/mi-footer.js">
+    </script>
+    <script type="module" src="cmp/mi-progreso.js">
+    </script>
+</head>
+
+<body>
+    <form name="forma">
+        <mi-nav></mi-nav>
+        <h1>Sesión Activa</h1>
+        <container style="text-align: center;">
+            <figure float: none>
+                <img id="avatar" src="" alt="Avatar" style="float: none; margin-top: 2em;">
+            </figure>
+            <p style="margin: 2em;">
+                <label>
+                    Email
+                    <output name="email">
+                      <mi-progreso>
+                      </mi-progreso>
+                    </output>
+                  </label>
+            </p>
+            <p>
+                <label>
+                    Nombre
+                    <output name="nombre">
+                      <mi-progreso>
+                      </mi-progreso>
+                    </output>
+                  </label>
+            </p>
+        </container>
+    </form>
+    <script type="module" src="js/CtrlSesion.js"></script>
+    <mi-footer></mi-footer>
+</body>
+
+</html>
