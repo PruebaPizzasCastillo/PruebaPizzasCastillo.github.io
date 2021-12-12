@@ -11,11 +11,17 @@
 /**
  * @typedef {Object} Alimento
  * @property {string} idProducto
+ * @property {string} nombre
+ * @property {string} costo
+ * @property {string} descripcion
  */
 
 /**
  * @typedef {Object} Sucursal
  * @property {string} nombreSucursal
+ * @property {string} direccion
+ * @property {string} hapertura
+ * @property {string} hcierre
  */
 
 /**

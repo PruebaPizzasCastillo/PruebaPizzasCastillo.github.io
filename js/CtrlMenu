@@ -39,13 +39,13 @@ function consulta() {
     /* Consulta que se actualiza
      * automáticamente. Pide todos
      * los registros de la colección
-     *  "Mensaje"
+     *  "Alimento"
      * ordenados por el campo
-     *  "timestamp"
+     *  "idProducto"
      * de forma
      *  descendente. */
     daoAlimentos.
-    orderBy("idProducto").
+    orderBy("idProducto", "desc").
     onSnapshot(
         htmlLista, errConsulta);
 }
