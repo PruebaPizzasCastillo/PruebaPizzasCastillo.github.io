@@ -111,7 +111,7 @@ function htmlFila(doc) {
         `<li class="fila" style="padding: 2em">
         <strong class="primario" style="padding: 2em; margin: 1px solid black; ";>
           <p>
-            <br style="color: red">
+            <br style="text-color: red">
             Sucursal ${cod(data.nombreSucursal)}
             <br>
           </p>
