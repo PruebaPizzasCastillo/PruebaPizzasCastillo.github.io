@@ -115,9 +115,9 @@ function htmlFila(doc) {
           <br>
           ${cod(data.direccion)}
           <br>
-          ${cod(data.hapertura)}
+          De: ${cod(data.hapertura)}
           <br>
-          ${cod(data.hcierre)}
+          A: ${cod(data.hcierre)}
         </strong>
       </li>`);
 }

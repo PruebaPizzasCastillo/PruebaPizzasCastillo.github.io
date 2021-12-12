@@ -115,7 +115,10 @@ function htmlFila(doc) {
           <br>
           ${cod(data.costo)}
           <br>
+          <p>
+          Descripción: <br>
           ${cod(data.descripcion)}
+          </p>
         </strong>
       </li>`);
 }
