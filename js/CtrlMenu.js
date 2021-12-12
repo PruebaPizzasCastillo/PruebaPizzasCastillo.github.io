@@ -14,7 +14,7 @@ import {
 /** @type {HTMLUListElement} */
 const lista = document.
 querySelector("#lista");
-const daoAlimentos =
+const daoAlimento =
     getFirestore().
 collection("Alimento");
 
@@ -44,8 +44,8 @@ function consulta() {
      *  "idProducto"
      * de forma
      *  descendente. */
-    daoAlimentos.
-    orderBy("idProducto", "desc").
+    daoAlimento.
+    orderBy("idProducto").
     onSnapshot(
         htmlLista, errConsulta);
 }
@@ -114,7 +114,7 @@ function htmlFila(doc) {
           <br>
           ${cod(data.nombre)}
           <br>
-          ${cod(data.precio)}
+          ${cod(data.costo)}
           <br>
           ${cod(data.descripcion)}
         </strong>
