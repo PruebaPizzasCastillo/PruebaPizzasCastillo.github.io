@@ -22,14 +22,7 @@ getAuth().
 onAuthStateChanged(
     protege, muestraError);
 
-/** @param {import(
-    "../lib/tiposFire.js").User}
-    usuario */
-async function protege(usuario) {
-    //if (tieneRol(usuario, ["Cliente"])) {
-    consulta();
-    //}
-}
+
 
 /** Muestra los mensajes
  * almacenados en la collection
