@@ -23,12 +23,11 @@ onAuthStateChanged(
     protege, muestraError);
 
 
-
 /** Muestra los mensajes
  * almacenados en la collection
  * "Alimento". Se actualiza
  * automáticamente. */
-function consulta() {
+async function consulta() {
     /* Consulta que se actualiza
      * automáticamente. Pide todos
      * los registros de la colección
