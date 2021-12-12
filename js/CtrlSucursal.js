@@ -109,7 +109,7 @@ function htmlFila(doc) {
      * inyección de código. */
     return ( /* html */
         `<li class="fila" style="padding: 2em">
-        <strong class="primario" style="padding: 2em; margin: 1px solid black ";>
+        <strong class="primario" style="padding: 2em; margin: 1px solid black; ";>
           <p>
             <br style="color: red">
             Sucursal ${cod(data.nombreSucursal)}
@@ -118,11 +118,7 @@ function htmlFila(doc) {
             ${cod(data.direccion)}
           <br>
           <p>
-          De: ${cod(data.hapertura)}
-          </p>
-          <br>
-          <p>
-          A: ${cod(data.hcierre)}
+          De: ${cod(data.hapertura)} - ${cod(data.hcierre)}
           </p>
         </strong>
       </li>`);
