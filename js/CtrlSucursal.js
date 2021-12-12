@@ -14,9 +14,9 @@ import {
 /** @type {HTMLUListElement} */
 const lista = document.
 querySelector("#lista");
-const daoAlimento =
+const daoSucursal =
     getFirestore().
-collection("Alimento");
+collection("Sucursal");
 
 getAuth().
 onAuthStateChanged(
@@ -33,19 +33,19 @@ async function protege(usuario) {
 
 /** Muestra los mensajes
  * almacenados en la collection
- * "Alimento". Se actualiza
+ * "Sucursal". Se actualiza
  * automáticamente. */
 function consulta() {
     /* Consulta que se actualiza
      * automáticamente. Pide todos
      * los registros de la colección
-     *  "Alimento"
+     *  "Sucursal"
      * ordenados por el campo
      *  "idProducto"
      * de forma
      *  descendente. */
-    daoAlimento.
-    orderBy("idProducto").
+    daoSucursal.
+    orderBy("nombreSucursal").
     onSnapshot(
         htmlLista, errConsulta);
 }
@@ -84,8 +84,8 @@ function htmlLista(snap) {
          * agrega un texto HTML. */
         html += /* html */
             `<li class="vacio">
-          -- No hay platillos
-          registrados. --
+          -- No hay sucursales
+          registradas. --
         </li>`;
     }
     lista.innerHTML = html;
@@ -101,7 +101,7 @@ function htmlFila(doc) {
     /** Recupera los datos del
      * documento.
      * @type {import("./tipos.js").
-                        Alimento} */
+                        Sucursal} */
     const data = doc.data();
     /* Agrega un li con los datos
      * del documento, los cuales se
@@ -111,11 +111,13 @@ function htmlFila(doc) {
         `<li class="fila" style="padding: 2em">
         <strong class="primario" style="padding: 2em">
           <br>
-          ${cod(data.nombre)}
+          ${cod(data.nombreSucursal)}
           <br>
-          ${cod(data.costo)}
+          ${cod(data.direccion)}
           <br>
-          ${cod(data.descripcion)}
+          ${cod(data.hapertura)}
+          <br>
+          ${cod(data.hcierre)}
         </strong>
       </li>`);
 }
