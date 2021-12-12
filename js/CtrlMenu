@@ -67,17 +67,16 @@ function htmlFila(doc) {
     const data = doc.data();
     const idProducto = cod(data.idProducto);
     const nombre = cod(data.nombre);
-    var costo = cod(data.costo);
-    var descripcion = cod(data.descripcion)
+    const costo = cod(data.costo);
+    const descripcion = cod(data.descripcion)
     const parámetros =
         new URLSearchParams();
     parámetros.append("id", doc.id);
     return ( /* html */
         `<li>
-      <a class="fila" href=
-  "menu.html?${parámetros}">
+            <a class="fila" href="menu.html?${parámetros}">
         <strong class="primario">
-          ${matricula} ${nombre} ${dformat}
+          ${idProducto} <br> ${nombre} <br> ${costo} <br> ${precio}
         </strong>
       </a>
      
