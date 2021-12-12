@@ -115,10 +115,10 @@ function htmlFila(doc) {
             Sucursal ${cod(data.nombreSucursal)}
             <br>
           </p>
-            ${cod(data.direccion)}
+            Dirección: ${cod(data.direccion)}
           <br>
           <p>
-          De: ${cod(data.hapertura)} - ${cod(data.hcierre)}
+          Horario: ${cod(data.hapertura)} - ${cod(data.hcierre)}
           </p>
         </strong>
       </li>`);
