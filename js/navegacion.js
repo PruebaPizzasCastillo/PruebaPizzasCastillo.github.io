@@ -5,11 +5,11 @@ muestraAlumnos() {
 }
 
 export function muestraAlimentos() {
-    location.href = "editar.html"
+    location.href = "menu.html";
 }
 
 export function muestraSucursal() {
-    location.href = "editar.html"
+    location.href = "sucursales.html";
 }
 
 export function
