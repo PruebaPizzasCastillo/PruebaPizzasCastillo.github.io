@@ -27,7 +27,7 @@ onAuthStateChanged(
  * almacenados en la collection
  * "Alimento". Se actualiza
  * automáticamente. */
-async function consulta() {
+function consulta() {
     /* Consulta que se actualiza
      * automáticamente. Pide todos
      * los registros de la colección
