@@ -109,7 +109,7 @@ function htmlFila(doc) {
      * inyección de código. */
     return ( /* html */
         `<li class="fila" style="padding: 2em">
-        <strong class="primario">
+        <strong class="primario" style="padding: 2em">
           <br>
           ${cod(data.nombre)}
           <br>
