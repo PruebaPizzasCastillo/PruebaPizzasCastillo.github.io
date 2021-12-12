@@ -109,15 +109,21 @@ function htmlFila(doc) {
      * inyección de código. */
     return ( /* html */
         `<li class="fila" style="padding: 2em">
-        <strong class="primario" style="padding: 2em">
+        <strong class="primario" style="padding: 2em; margin: 1px solid black ";>
+          <p>
+            <br style="color: red">
+            Sucursal ${cod(data.nombreSucursal)}
+            <br>
+          </p>
+            ${cod(data.direccion)}
           <br>
-          ${cod(data.nombreSucursal)}
-          <br>
-          ${cod(data.direccion)}
-          <br>
+          <p>
           De: ${cod(data.hapertura)}
+          </p>
           <br>
+          <p>
           A: ${cod(data.hcierre)}
+          </p>
         </strong>
       </li>`);
 }
