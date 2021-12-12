@@ -108,9 +108,8 @@ function htmlFila(doc) {
      * codifican para evitar
      * inyección de código. */
     return ( /* html */
-        `<li class="fila">
+        `<li class="fila" style="padding: 2em">
         <strong class="primario">
-          ${cod(data.idProducto)}
           <br>
           ${cod(data.nombre)}
           <br>
