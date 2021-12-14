@@ -25,6 +25,12 @@
  */
 
 /**
+ * @typedef {Object} Producto
+ * @property {string} idProducto
+ * @property {string} costo
+ */
+
+/**
  * @typedef {Object} Usuario
  * @property {string[]} rolIds
  * @property {string} alumnoId
