@@ -19,7 +19,7 @@ collection("Alimento");
 const params =
     new URL(location.href).
 searchParams;
-const id = params.get("idProducto");
+const idProducto = params.get("idProducto");
 /** @type {HTMLFormElement} */
 const forma = document["forma"];
 
@@ -41,7 +41,7 @@ async function busca() {
     try {
         const doc =
             await daoAlimento.
-        doc(id).
+        doc(idProducto).
         get();
         if (doc.exists) {
             /**
@@ -86,7 +86,7 @@ async function guarda(evt) {
             descripcion
         };
         await daoAlimento.
-        doc(id).
+        doc(idProducto).
         set(modelo);
         muestraAlimentos();
     } catch (e) {
@@ -99,7 +99,7 @@ async function elimina() {
         if (confirm("Confirmar la " +
                 "eliminación")) {
             await daoAlimento.
-            doc(id).
+            doc(idProducto).
             delete();
             muestraAlimentos();
         }

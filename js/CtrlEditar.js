@@ -108,7 +108,7 @@ function htmlFila(doc) {
     parámetros.append("idProducto", doc.idProducto);
     return ( /* html */
         `<li class="fila" style="padding: 2em">
-        <a href="editar.html?${parámetros}">
+        <a href="alimento.html?${parámetros}">
         <strong class="primario" style="padding: 2em">
           <br>
           ${cod(data.nombre)}
