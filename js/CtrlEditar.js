@@ -105,7 +105,7 @@ function htmlFila(doc) {
     const precio = cod(data.precio);
     const descripcion = cod(data.descripcion);
     const parámetros = new URLSearchParams();
-    parámetros.append("id", doc.id);
+    parámetros.append("idProducto", doc.idProducto);
     return ( /* html */
         `<li class="fila" style="padding: 2em">
         <a href="alimentoNuevo.html?${parámetros}">
