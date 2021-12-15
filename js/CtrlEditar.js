@@ -74,7 +74,7 @@ function htmlFila(doc) {
     return ( /* html */
         `<li>
         <a class="fila" href=
-    "editar.html?${parámetros}">
+    "menu.html?${parámetros}">
           <strong class="primario">
             ${idProducto} // ${nombre} // ${costo} // ${descripcion}
           </strong>
