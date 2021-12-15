@@ -84,7 +84,7 @@ async function guarda(evt) {
             descripcion
         };
         await daoAlimento.
-        doc(idProducto).
+        doc(id).
         set(modelo);
         muestraAlimentos();
     } catch (e) {
