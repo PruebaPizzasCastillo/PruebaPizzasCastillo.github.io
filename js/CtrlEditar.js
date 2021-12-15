@@ -26,7 +26,7 @@ onAuthStateChanged(
     "../lib/tiposFire.js").User}
     usuario */
 async function protege(usuario) {
-    if (tieneRol(usuario, ["Cliente"])) {
+    if (tieneRol(usuario, ["Administrador"])) {
         consulta();
     }
 }
